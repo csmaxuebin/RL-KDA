@@ -26,28 +26,28 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 `Polbooks,Ca-AstroPh,Ca-CondMat`
 
 # Experimental Setup
-### 1. **Algorithm Description:**
+### **Algorithm Description:**
    - **FAPrivBayes Algorithm:** Improves the speed of Bayesian network generation by determining the order of nodes based on node weighting, reducing the time and overhead required.
    - **JTFAPB Algorithm:** Uses the JTree algorithm to modify the Bayesian network structure created by FAPrivBayes, reducing the number of subnets and thus enhancing the privacy budget allocation across the network.
 
-### 2. **Data Sets Used:**
+### **Data Sets Used:**
    - Four real data sets were used in the experiments:
      - **NLTCS:** Long-term care research data from the United States.
      - **ACS:** Data from IPUMS-USA 2013 and 2014 ACS sampling.
      - **Adult:** 1994 US Adult Census data.
      - **BR2000:** Data from the 2000 Brazilian Census.
 
-### 3. **Evaluation Metrics:**
+### **Evaluation Metrics:**
    - **α-way Query Accuracy:** Measures the accuracy and availability of the algorithm on high-dimensional data using α-way edge queries with α set to 2 and 3.
    - **SVM Classifier Accuracy:** Classification accuracy of results from synthetic data using SVM classifiers, predicting attributes relevant to each dataset.
 
-### 4. **Performance Metrics:**
+### **Performance Metrics:**
    - **Run Time:** Comparison of running time between FAPrivBayes and JTFAPB algorithms on the four datasets to highlight efficiency improvements.
 
-### 5. **Procedure:**
+### **Procedure:**
    - The experiments involved executing the above algorithms on the datasets, measuring α-way query accuracy, SVM classification accuracy, and running time. The results were averaged over multiple runs to ensure reliability.
 
-### 6. **Outcome:**
+### **Outcome:**
    - The JTFAPB algorithm showed significant improvements in data usability and privacy over the FAPrivBayes and other previous algorithms. The privacy budget allocation per subnet was more efficient, leading to reduced noise levels in the data.
 
 This experimental setup was crucial for validating the effectiveness and efficiency of the JTFAPB algorithm in maintaining differential privacy while handling high-dimensional datasets. Experimental Setup
