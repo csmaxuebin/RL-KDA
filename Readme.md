@@ -87,55 +87,20 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
    - This script is involve operations related to tree data structures. Common functionalities could include building trees, traversing trees, modifying tree nodes, or performing calculations such as finding the height, depth, or other properties of trees.
    - 
 #  Experimental Results
-![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig1.jpg)
-1. **Figures 1(a), (b), and (c) **:
-   - These sub-figures display the error evaluations of three algorithms—GA-KDA, TSRAM, and RL-KDA—across different metrics. Error evaluations are calculated by comparing the metrics of the anonymized graph to those of the original graph, as described by Equation (8).
-   - The results show that RL-KDA generally outperforms the other two algorithms across these metrics. For example, in Figure 1(b), RL-KDA maintains an error below 0.02, whereas GA-KDA has errors above 0.1, and TSRAM's errors range between 0.02 and 0.04.
-2. **Figure 1(d)**:
+**Figures 1(a), (b), and (c)**:
+   - These sub-figures display the error evaluations of three algorithms—GA-KDA, TSRAM, and RL-KDA—across different metrics. Error evaluations are calculated by comparing the metrics of the anonymized graph to those of the original graph.
+**Figure 1(d)**:
    - This plot primarily compares the edge differences between the UMGA and RL-KDA algorithms under varying values of the privacy parameter K. Edge difference is determined by calculating the difference in the number of edges between the original and the anonymized graphs.
-   - The results indicate that neither algorithm needs to add extra edges when K is between 5 and 25. However, at K=50, the edge difference for UMGA is twice that of RL-KDA, demonstrating that RL-KDA better preserves the original graph structure at higher values of K.
+![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig1.jpg)
 
-Overall, this experiment evaluates the performance of graph anonymization algorithms under different strengths of privacy protection, emphasizing the advantage of the RL-KDA algorithm in maintaining graph structure. This is crucial for selecting suitable graph anonymization techniques to ensure data privacy while minimizing the impact on data utility.
-
+Figure 2 from the experiment visually demonstrates how different graph anonymization algorithms perform in terms of maintaining structural characteristics of the Ca-AstroPh graph network as the privacy parameter K changes. The figure evaluates three algorithms: RL-KDA, FKDA, and a method labeled as VertexAdd,(ACC), (T), (APL).
 ![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig2.jpg)
-Figure 2 from the experiment visually demonstrates how different graph anonymization algorithms perform in terms of maintaining structural characteristics of the Ca-AstroPh graph network as the privacy parameter K changes. The figure evaluates three algorithms: RL-KDA, FKDA, and a method labeled as VertexAdd, across different metrics—Average Clustering Coefficient (ACC), Transitivity (T), and Average Path Length (APL).
 
-1. **Figure 2(a) - Average Clustering Coefficient (ACC):**
-   - This graph shows the ACC across varying values of K. It illustrates that the ACC for FKDA decreases as K increases. However, all three methods do not sufficiently mimic the original graph's ACC, indicating an overestimation in clustering coefficients compared to the original graph.
-
-2. **Figure 2(b) - Transitivity (T):**
-   - In this chart, RL-KDA closely aligns with the transitivity of the original graph across different values of K, indicating that RL-KDA preserves the global connectivity pattern better than the other algorithms.
-
-3. **Figure 2(c) - Average Path Length (APL):**
-   - Here, RL-KDA closely matches the APL of the original graph, suggesting that it maintains path distances within the graph more effectively than other methods.
-
-Overall, the results from these experiments suggest that RL-KDA outperforms the other tested algorithms in terms of preserving the structural properties of the original graph while anonymizing it, thereby ensuring higher data utility for the anonymized graphs. This makes RL-KDA a preferable choice when considering graph anonymization techniques that aim to maintain the utility of the graph data.
-
+Figure 3 provides an evaluation of how the privacy parameter K affects different graph metrics on the Ca-CondMat graph, examining algorithms such as RL-KDA, FKDA, and VertexAdd. Each sub-figure measures a different aspect of graph structure after anonymization processes.
 ![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig3.jpg)
-
-Figure 3 provides an evaluation of how the privacy parameter K affects different graph metrics on the Ca-CondMat graph, examining algorithms such as RL-KDA, FKDA, and VertexAdd. Each sub-figure measures a different aspect of graph structure after anonymization processes:
-
-1. **Figure 3(a) - Average Clustering Coefficient (ACC):**
-   - This graph shows that the ACC for RL-KDA closely aligns with that of the original graph throughout the range of K values, indicating that RL-KDA maintains the clustering characteristics effectively because it does not introduce new edges to the graph.
-
-2. **Figure 3(b) - Transitivity (T):**
-   - It depicts that transitivity decreases notably when K is greater than or equal to 15. This decrease is attributed to the fluctuations caused by edge switching, which impacts the global connectivity and thus the transitivity of the graph.
-
-3. **Figure 3(c) - Average Path Length (APL):**
-   - This plot shows how the APL metric changes with different K values after the graph has been anonymized. There is a slight decrease in APL at K=15 for RL-KDA, due to random modifications in the graph that result in the removal of some critical edges, affecting the shortest paths between nodes.
-
-Overall, these results highlight the varying impacts of graph anonymization techniques on the structural integrity and characteristics of the Ca-CondMat graph. RL-KDA, in particular, is noted for its ability to preserve the original graph's clustering coefficients effectively while causing minimal disruption to the average path length, albeit with some decrease due to the necessary random edge modifications for achieving anonymity.
-
-
-
-
-
 
 In a word, it can be found that RL-KDA is closer to the metrics of the original graph than other algorithms through comparison experiments. The reason why RL-KDA has advantages over the other four algorithms is that it reduces the information loss in the process of anonymity sequence, solves the problem of low data utility from the essence of the problem, and combines the new graph modification algorithm to improve data utility.
 ```
 ## Update log
-
-```
 - {24.06.15} Uploaded overall framework code and readme file
 ```
-
