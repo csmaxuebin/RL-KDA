@@ -64,6 +64,17 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 - **TSRAM**: Uses a tree structure to generate a sequence of anonymity degrees and achieves privacy protection through node partitioning.
 - **GA-KDA**: Combines community detection and genetic algorithms for graph anonymization.
 ### The role of classes
+- **GraphConstruct**: It operates on edges to generate anonymous graphs
+- **Tree**: Generate a tree based on the original degree sequence
+- **Get_tree**: The function is a spanning tree
+- **Ano_degreeSeq**: Determine the final anonymity sequence through DFS traversal
+- **Probing**: adding noise to a function
+- **EdgeDeletion**: deleting edges
+- **EdgeAddition**: Add edges
+- **EdgeSwitch**: Swap edges
+- **RLKDA**: Discovering the Anonymous Degree Sequence with the Least Information Loss during the Generation of Anonymous Degree Sequences.
+
+
 
 # Experimental Analysis:
 - The algorithms were compared on the basis of how well they preserve the graph structure and minimize the distortion compared to the original graph.
@@ -76,10 +87,10 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
    - This script could be involved in analyzing or modifying the degree sequence of nodes in a graph. "Degree sequence" refers to a list of degrees of the nodes in the graph, which anonymized or altered in some way by this script. Anonymization can involve making the sequence less identifiable to protect privacy.
 
 2. **degreechange.py**:
-   - This script deals with changes to the degree of nodes within a network or graph over time or under certain conditions. It is calculating the degree changes or implementing changes to study the effects on the graph's properties.
+   - Determine the degree of addition or reduction.
 
 3. **GraphModification.py**:
-   - This script modifies a graph structure. Modifications include adding or removing nodes or edges, altering weights of edges, or other transformations aimed at analyzing the impact on graph metrics or preparing data for further analysis.
+   - This script modifies a graph structure. Sorts nodes based on their degree centrality and operates on their edges to generate an anonymous graph.
 
 4. **RLKDA.py**:
    -  The name suggests it is involve a specific algorithm or method, possibly related to machine learning or data analysis, where "RL" could refer to Reinforcement Learning and "KDA" could denote some form of Kernel Discriminant Analysis or another algorithmic approach. The script can implement or utilize this methodology for processing data.
