@@ -50,7 +50,7 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 ### 6. **Outcome:**
    - The JTFAPB algorithm showed significant improvements in data usability and privacy over the FAPrivBayes and other previous algorithms. The privacy budget allocation per subnet was more efficient, leading to reduced noise levels in the data.
 
-This experimental setup was crucial for validating the effectiveness and efficiency of the JTFAPB algorithm in maintaining differential privacy while handling high-dimensional datasets. #Experimental Setup
+This experimental setup was crucial for validating the effectiveness and efficiency of the JTFAPB algorithm in maintaining differential privacy while handling high-dimensional datasets. Experimental Setup
 The experimental setup includes using various datasets and algorithms to evaluate the effectiveness of RL-KDA. The following are the key components of the experimental setup:
 
 ### Datasets Used:
