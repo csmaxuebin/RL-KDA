@@ -87,7 +87,7 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
    - This script is involve operations related to tree data structures. Common functionalities could include building trees, traversing trees, modifying tree nodes, or performing calculations such as finding the height, depth, or other properties of trees.
    - 
 #  Experimental Results
-![输入图片说明](/imgs/2024-06-16/ptRhoSn9YP22ESx2.png)
+![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig1.jpg)
 1. **Figures 1(a), (b), and (c) **:
    - These sub-figures display the error evaluations of three algorithms—GA-KDA, TSRAM, and RL-KDA—across different metrics. Error evaluations are calculated by comparing the metrics of the anonymized graph to those of the original graph, as described by Equation (8).
    - The results show that RL-KDA generally outperforms the other two algorithms across these metrics. For example, in Figure 1(b), RL-KDA maintains an error below 0.02, whereas GA-KDA has errors above 0.1, and TSRAM's errors range between 0.02 and 0.04.
@@ -97,7 +97,7 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 
 Overall, this experiment evaluates the performance of graph anonymization algorithms under different strengths of privacy protection, emphasizing the advantage of the RL-KDA algorithm in maintaining graph structure. This is crucial for selecting suitable graph anonymization techniques to ensure data privacy while minimizing the impact on data utility.
 
-![输入图片说明](/imgs/2024-06-16/rYawiKXlj95mJril.png)
+![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig2.jpg)
 Figure 2 from the experiment visually demonstrates how different graph anonymization algorithms perform in terms of maintaining structural characteristics of the Ca-AstroPh graph network as the privacy parameter K changes. The figure evaluates three algorithms: RL-KDA, FKDA, and a method labeled as VertexAdd, across different metrics—Average Clustering Coefficient (ACC), Transitivity (T), and Average Path Length (APL).
 
 1. **Figure 2(a) - Average Clustering Coefficient (ACC):**
@@ -111,7 +111,7 @@ Figure 2 from the experiment visually demonstrates how different graph anonymiza
 
 Overall, the results from these experiments suggest that RL-KDA outperforms the other tested algorithms in terms of preserving the structural properties of the original graph while anonymizing it, thereby ensuring higher data utility for the anonymized graphs. This makes RL-KDA a preferable choice when considering graph anonymization techniques that aim to maintain the utility of the graph data.
 
-![输入图片说明](/imgs/2024-06-16/dRd4qx2JMUNTKYC3.png)
+![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig3.jpg)
 
 Figure 3 provides an evaluation of how the privacy parameter K affects different graph metrics on the Ca-CondMat graph, examining algorithms such as RL-KDA, FKDA, and VertexAdd. Each sub-figure measures a different aspect of graph structure after anonymization processes:
 
