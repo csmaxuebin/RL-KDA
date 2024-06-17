@@ -50,7 +50,7 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 
 ### **Performance Metrics:**
    - **Run Time:** Comparison of running time between FAPrivBayes and JTFAPB algorithms on the four datasets to highlight efficiency improvements.
-   - 
+
 ### Datasets Used:
 1. **Polbooks**: A network of American political books.
 2. **Ca-AstroPh**: An Arxiv dataset.
