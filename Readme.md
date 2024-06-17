@@ -85,10 +85,11 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 
 5. **tree.py**:
    - This script is involve operations related to tree data structures. Common functionalities could include building trees, traversing trees, modifying tree nodes, or performing calculations such as finding the height, depth, or other properties of trees.
-   - 
+
 #  Experimental Results
 **Figures 1(a), (b), and (c)**:
    - These sub-figures display the error evaluations of three algorithms—GA-KDA, TSRAM, and RL-KDA—across different metrics. Error evaluations are calculated by comparing the metrics of the anonymized graph to those of the original graph.
+
 **Figure 1(d)**:
    - This plot primarily compares the edge differences between the UMGA and RL-KDA algorithms under varying values of the privacy parameter K. Edge difference is determined by calculating the difference in the number of edges between the original and the anonymized graphs.
 ![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig1.jpg)
@@ -99,8 +100,7 @@ Figure 2 from the experiment visually demonstrates how different graph anonymiza
 Figure 3 provides an evaluation of how the privacy parameter K affects different graph metrics on the Ca-CondMat graph, examining algorithms such as RL-KDA, FKDA, and VertexAdd. Each sub-figure measures a different aspect of graph structure after anonymization processes.
 ![输入图片说明](https://github.com/csmaxuebin/RL-KDA/blob/main/pic/fig3.jpg)
 
-In a word, it can be found that RL-KDA is closer to the metrics of the original graph than other algorithms through comparison experiments. The reason why RL-KDA has advantages over the other four algorithms is that it reduces the information loss in the process of anonymity sequence, solves the problem of low data utility from the essence of the problem, and combines the new graph modification algorithm to improve data utility.
+# Update log
 ```
-## Update log
 - {24.06.15} Uploaded overall framework code and readme file
 ```
