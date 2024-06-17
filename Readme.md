@@ -26,9 +26,6 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 `Polbooks,Ca-AstroPh,Ca-CondMat`
 
 # Experimental Setup
-### **Algorithm Description:**
-   - **FAPrivBayes Algorithm:** Improves the speed of Bayesian network generation by determining the order of nodes based on node weighting, reducing the time and overhead required.
-   - **JTFAPB Algorithm:** Uses the JTree algorithm to modify the Bayesian network structure created by FAPrivBayes, reducing the number of subnets and thus enhancing the privacy budget allocation across the network.
 
 ### **Data Sets Used:**
    - Four real data sets were used in the experiments:
@@ -44,14 +41,8 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 ### **Performance Metrics:**
    - **Run Time:** Comparison of running time between FAPrivBayes and JTFAPB algorithms on the four datasets to highlight efficiency improvements.
 
-### **Procedure:**
-   - The experiments involved executing the above algorithms on the datasets, measuring α-way query accuracy, SVM classification accuracy, and running time. The results were averaged over multiple runs to ensure reliability.
-
-### **Outcome:**
-   - The JTFAPB algorithm showed significant improvements in data usability and privacy over the FAPrivBayes and other previous algorithms. The privacy budget allocation per subnet was more efficient, leading to reduced noise levels in the data.
-
 This experimental setup was crucial for validating the effectiveness and efficiency of the JTFAPB algorithm in maintaining differential privacy while handling high-dimensional datasets. Experimental Setup
-The experimental setup includes using various datasets and algorithms to evaluate the effectiveness of RL-KDA. The following are the key components of the experimental setup:
+The experimental setup includes using various datasets and algorithms to evaluate the effectiveness of RL-KDA. The following are the key components of the experimental setup.
 
 ### Datasets Used:
 1. **Polbooks**: A network of American political books.
