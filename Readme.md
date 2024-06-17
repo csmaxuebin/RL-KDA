@@ -5,8 +5,15 @@
 ## Abstract
 K-degree anonymity is one of the privacy-preserving techniques and has gained attention in academia, industry, and government. Many social network data publishing algorithms based on K-anonymity techniques have been proposed,but most studies focus on static social networks. To address the existing problem of dynamic social networks, we propose a K-degree anonymity dynamic data publishing algorithm based on reinforcement learning. The algorithm ends with two phases: anonymization sequence and graph modification. In the anonymous sequence phase, this paper combines the idea of reinforcement learning and the characteristics of dynamic data change to build a reinforcement learning model for anonymous sequences. In this way, an ideal anonymous sequence can be created. We also propose a new strategy for graph modification, which selects edges according to degree centrality to generate anonymous graphs.Finally,experiments on real datasets show that this algorithm can reduce information loss and improve data utility.Paper access: [10.1109/COMPSAC57700.2023.00100](https://ieeexplore.ieee.org/document/10196930)
 
-#
-
+# References
+@inproceedings{ma2023rl,
+  title={RL-KDA: A K-degree Anonymity Algorithm Based on Reinforcement Learning},
+  author={Ma, Xuebin and Xiang, Nan and Gao, Yulan},
+  booktitle={2023 IEEE 47th Annual Computers, Software, and Applications Conference (COMPSAC)},
+  pages={729--734},
+  year={2023},
+  organization={IEEE}
+}
 # Experimental Environment
 
 ```
@@ -19,7 +26,7 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 -math 1.1.0
 -Python 3.9
 -torch==2.0.0
-- torchvision~=0.15.1+cu117
+-torchvision~=0.15.1+cu117
 ```
 
 # Datasets
