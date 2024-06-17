@@ -63,6 +63,7 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 - **KDVEM**: Details not specified.
 - **TSRAM**: Uses a tree structure to generate a sequence of anonymity degrees and achieves privacy protection through node partitioning.
 - **GA-KDA**: Combines community detection and genetic algorithms for graph anonymization.
+### The role of classes
 
 # Experimental Analysis:
 - The algorithms were compared on the basis of how well they preserve the graph structure and minimize the distortion compared to the original graph.
