@@ -40,19 +40,11 @@ Operating Environment: Python with Intel Core i5 CPU 1.8 GHz and 8 GB RAM, runni
 
 ### **Performance Metrics:**
    - **Run Time:** Comparison of running time between FAPrivBayes and JTFAPB algorithms on the four datasets to highlight efficiency improvements.
-
-This experimental setup was crucial for validating the effectiveness and efficiency of the JTFAPB algorithm in maintaining differential privacy while handling high-dimensional datasets. Experimental Setup
-The experimental setup includes using various datasets and algorithms to evaluate the effectiveness of RL-KDA. The following are the key components of the experimental setup.
-
+   - 
 ### Datasets Used:
 1. **Polbooks**: A network of American political books.
 2. **Ca-AstroPh**: An Arxiv dataset.
 3. **Ca-CondMat**: Another Arxiv dataset.
-
-### Evaluation Metrics:
-- **Transitivity (T)**: Measures the ratio of the triangles to triplets in the graph.
-- **Average Clustering Coefficient (ACC)**: The average likelihood of nodes in a graph to cluster together.
-- **Average Path Length (APL)**: The average shortest path length between all pairs of nodes in the graph.
 
 ### Algorithms Compared:
 - **FKDA**: A representative algorithm for K-degree anonymous social graphs.
